@@ -1,5 +1,6 @@
 # Major-Assignment-1
 
+Phase 1- Used Machine Appendix to use other features and analysed the features.
 Phase 2- I analysed the data, the datatypes and used a threshold of 80% to drop a column. Used simple imputer for missing values, initally used KNN but the computation was very slow. Imputed categories with missing value.Used label encoder and one hot encoding for categories.
 
 Phase 3- Applied XGBoost along with optuna for tuning hyperparamters and Random forest and compared their result with R2 and RMSE. 
