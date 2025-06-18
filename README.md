@@ -1,11 +1,13 @@
 # Major-Assignment-1
 
 Phase 1- Used Machine Appendix to use other features and analysed the features.
+
 Phase 2- I analysed the data, the datatypes and used a threshold of 80% to drop a column. Used simple imputer for missing values, initally used KNN but the computation was very slow.
 
-Imputed categories with missing value.Used label encoder and one hot encoding for categories.
+Imputed both train and test categories with missing value. Used ordinal encoder and one hot encoding for categories.
 
-Phase 3- Applied XGBoost along with optuna for tuning hyperparamters and Random forest and compared their result with R2 and RMSE. 
+Dropped columns with more than 60% data missing and aligned test and train columns. If a column is present in train and not present in test, I imputed with median of train data.
 
-Phase 4- Used test file for predictions. First aligned columns according to training set used same imputation and ecoding methods on test set.
-Used both models on it.
+Phase 3- Applied XGBoost along with optuna (read the documentation ) for tuning hyperparamters and Random forest and compared their result with R2 and RMSE. Applied ridge regression but was performing very poorly as data is non linear.
+
+Phase 4- Used test file for predictions.
