@@ -19,3 +19,7 @@ Transfer Learning-
 1)  Pretrained on ImageNet as frozen base models and trained a custom classifier on top.
 2) Unfroze the base model and continued training with a lower learning rate to adapt deeper layers to the dog breed classification task.
 
+Performance-
+Maximum accuracy of 92% on all base layers frozen.
+Maximum accuracy  of 79% on fine tuning base layers.
+
