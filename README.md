@@ -13,3 +13,9 @@ Phase 3- Applied XGBoost along with optuna (read the documentation ) for tuning 
 Phase 4- Used test file for predictions.
 
 # Major Assignment-2
+
+Used EfficientNetB3 and MobileNetV3 as pre trained models. MobileNet due to its light architecture gave faster results on all base layers freezed than EfficientNetV3.
+Transfer Learning-
+1)  Pretrained on ImageNet as frozen base models and trained a custom classifier on top.
+2) Unfroze the base model and continued training with a lower learning rate to adapt deeper layers to the dog breed classification task.
+
