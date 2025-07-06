@@ -11,3 +11,5 @@ Dropped columns with more than 60% data missing and aligned test and train colum
 Phase 3- Applied XGBoost along with optuna (read the documentation ) for tuning hyperparamters and Random forest and compared their result with R2 and RMSE. Applied ridge regression with normalisation but got inferior results.
 
 Phase 4- Used test file for predictions.
+
+# Major Assignment-2
