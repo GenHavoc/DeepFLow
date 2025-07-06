@@ -21,5 +21,5 @@ Transfer Learning-
 
 Performance-
 Maximum accuracy of 92% on all base layers frozen.
-Maximum accuracy  of 79% on fine tuning base layers.
+Maximum accuracy  of 85% on fine tuning base layers.
 
