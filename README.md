@@ -18,10 +18,15 @@ Used EfficientNetB3 and MobileNetV3 as pre trained models. MobileNet due to its 
 Transfer Learning-
 1)  Pretrained on ImageNet as frozen base models and trained a custom classifier on top.
 2) Unfroze the base model and continued training with a lower learning rate to adapt deeper layers to the dog breed classification task.
+3) 
+## 📊 Performance Metrics
 
-Performance-
-Maximum accuracy of 92% on all base layers frozen.
-Maximum accuracy  of 85% on fine tuning base layers.
+| Metric              | Value       |
+|---------------------|-------------|
+| Training Accuracy   | ~95%        |
+| Validation Accuracy | ~80%        |
+| Loss Function       | Categorical Crossentropy |
+| Optimizer           | Adam        |
 
 ## 📦 Files
 
