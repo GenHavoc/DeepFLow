@@ -37,10 +37,9 @@ Maximum accuracy  of 85% on fine tuning base layers.
 ```python
 from tensorflow.keras.models import load_model
 
-# Load model
 model = load_model("cnn_model.h5")
 
-# Predict on a new image
+
 import numpy as np
-img = ...  # load and preprocess image
+img = ...  # load the image here 
 prediction = model.predict(np.expand_dims(img, axis=0))
