@@ -23,3 +23,24 @@ Performance-
 Maximum accuracy of 92% on all base layers frozen.
 Maximum accuracy  of 85% on fine tuning base layers.
 
+## 📦 Files
+
+| File              | Description                                |
+|-------------------|--------------------------------------------|
+| `cnn_model.h5`    | Final trained Keras model (HDF5 format)    |
+| `submission.csv`  | Predictions on test dataset (id, label)    |
+| `notebook.ipynb`  | Training and preprocessing code            |
+
+---
+## Load the Saved Model
+
+```python
+from tensorflow.keras.models import load_model
+
+# Load model
+model = load_model("cnn_model.h5")
+
+# Predict on a new image
+import numpy as np
+img = ...  # load and preprocess image
+prediction = model.predict(np.expand_dims(img, axis=0))
