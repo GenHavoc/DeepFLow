@@ -18,7 +18,7 @@ Used EfficientNetB3 and MobileNetV3 as pre trained models. MobileNet due to its 
 Transfer Learning-
 1)  Pretrained on ImageNet as frozen base models and trained a custom classifier on top.
 2) Unfroze the base model and continued training with a lower learning rate to adapt deeper layers to the dog breed classification task.
-3) 
+
 ## 📊 Performance Metrics
 
 | Metric              | Value       |
