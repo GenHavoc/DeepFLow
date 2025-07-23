@@ -51,20 +51,71 @@ prediction = model.predict(np.expand_dims(img, axis=0))
 ```
 ------
 
-##  FastAPI CNN Image Classification API
-Use the model and label_encoder.pkl file 
+# 🧠 FastAPI CNN Image Classification API
 
-Download main.py 
-Run this in terminal with location path of model file
-```python
-cd deepflow
-uvicorn main:app --reload
-```
-Then open your browser to:
-```python
-http://127.0.0.1:8000/docs
-```
+This FastAPI app serves a CNN model for image classification.
+
+## 📁 Requirements
+
+- `main.py`
+- `model.pth` (your trained CNN model)
+- `label_encoder.pkl` (for decoding model output to labels)
+
+All three files must be in the **same directory**, e.g., `deepflow/`.
+
 ---
+
+## 🚀 Running the API
+
+1. **Open terminal** and change to the directory containing the files:
+
+   ```bash
+   cd deepflow
+   ```
+
+2. **Start the FastAPI server**:
+
+   ```bash
+   uvicorn main:app --reload
+   ```
+
+3. **Open your browser** and visit:
+
+   ```
+   http://127.0.0.1:8000/docs
+   ```
+
+   You’ll see an interactive Swagger UI to test the API.
+
+---
+
+## 📦 API Endpoint
+
+### `POST /predict/`
+
+- **Input:** an image file (e.g., `.jpg`, `.png`)
+- **Response:** JSON with predicted class label
+
+#### Example using Swagger UI:
+
+1. Click `Try it out`
+2. Upload an image file
+3. Click `Execute`
+4. Get back the predicted label 🎉
+
+---
+
+## 📝 Example Response
+
+```json
+{
+  "prediction": "cat"
+}
+```
+
+---
+
+
 
 
 
