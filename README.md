@@ -53,7 +53,7 @@ prediction = model.predict(np.expand_dims(img, axis=0))
 
 # 🧠 FastAPI CNN Image Classification API
 
-This FastAPI app serves a CNN model for image classification.
+This FastAPI app serves a CNN model for dog breed classification.
 
 ## 📁 Requirements
 
@@ -61,7 +61,7 @@ This FastAPI app serves a CNN model for image classification.
 - `model.pth` (your trained CNN model)
 - `label_encoder.pkl` (for decoding model output to labels)
 
-All three files must be in the **same directory**, e.g., `deepflow/`.
+All three files must be in the **same directory**, e.g., `Deepflow/`.
 
 ---
 
