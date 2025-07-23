@@ -101,7 +101,7 @@ All three files must be in the **same directory**, e.g., `deepflow/`.
 1. Click `Try it out`
 2. Upload an image file
 3. Click `Execute`
-4. Get back the predicted label 🎉
+4. Get back the predicted label 
 
 ---
 
@@ -109,7 +109,7 @@ All three files must be in the **same directory**, e.g., `deepflow/`.
 
 ```json
 {
-  "prediction": "cat"
+  "prediction": "Great Dane"
 }
 ```
 
