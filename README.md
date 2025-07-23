@@ -51,7 +51,7 @@ prediction = model.predict(np.expand_dims(img, axis=0))
 ```
 ------
 
-# 🧠 FastAPI CNN Image Classification API
+# FastAPI CNN Image Classification API
 
 This FastAPI app serves a CNN model for dog breed classification.
 
@@ -65,7 +65,7 @@ All three files must be in the **same directory**, e.g., `Deepflow/`.
 
 ---
 
-## 🚀 Running the API
+## Running the API
 
 1. **Open terminal** and change to the directory containing the files:
 
