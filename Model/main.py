@@ -8,15 +8,14 @@ from PIL import Image
 import io
 import pickle
 
-# ---------- Load model and label encoder ----------
+# add your own path here
 model = load_model("/Users/shashwatshrivastava/Downloads/cnn_model.h5")
 with open("/Users/shashwatshrivastava/Downloads/label_encoder.pkl", "rb") as f:
 
     label_encoder = pickle.load(f)
 
-IMG_SIZE = 160  # same as used during training
+IMG_SIZE = 160   
 
-# ---------- Create FastAPI app ----------
 app = FastAPI()
 
 def preprocess_image(file) -> np.ndarray:
