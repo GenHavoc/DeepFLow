@@ -52,7 +52,19 @@ prediction = model.predict(np.expand_dims(img, axis=0))
 ------
 
 ##  FastAPI CNN Image Classification API
+Use the model and label_encoder.pkl file 
 
+Download main.py 
+Run this in terminal with location path of model file
+```python
+cd deepflow
+uvicorn main:app --reload
+```
+Then open your browser to:
+```python
+http://127.0.0.1:8000/docs
+```
+---
 
 
 
