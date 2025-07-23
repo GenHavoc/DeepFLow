@@ -48,3 +48,15 @@ model = load_model("cnn_model.h5")
 import numpy as np
 img = ...  # load the image here 
 prediction = model.predict(np.expand_dims(img, axis=0))
+
+
+
+# 🚀 FastAPI CNN Image Classification API
+
+A simple FastAPI app to serve a trained CNN model for image classification.
+
+---
+
+## 📁 Project Structure
+
+
